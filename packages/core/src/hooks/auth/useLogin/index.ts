@@ -59,6 +59,22 @@ export function useLogin<TVariables = {}>({
 
   const to = parsed.params?.to;
 
+  React.useEffect(() => {
+    const oauthError = parsed.params?.error;
+    if (oauthError === "access_denied") {
+      open?.({
+        message: "Login Error",
+        description: "Login cancelled by user",
+        key: "login-error",
+        type: "error",
+      });
+      const url = new URL(window.location.href);
+      url.searchParams.delete("error");
+      url.searchParams.delete("error_description");
+      window.history.replaceState({}, "", url.toString());
+    }
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+
   const mutation = useMutation<
     AuthActionResponse,
     Error | RefineError,
