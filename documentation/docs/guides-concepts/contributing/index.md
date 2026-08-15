@@ -31,14 +31,44 @@ We follow a [code of conduct](https://github.com/refinedev/refine/blob/main/CODE
 
 :::
 
-If your environment is ready, you can [fork the Refine repository](https://github.com/refinedev/refine/fork) and clone it to your local machine.
+If your environment is ready, you can start with the step-by-step guide below.
+
+### Step-by-step Guide for First-time Contributors
+
+1. **Fork the repository**: [Fork the Refine repository](https://github.com/refinedev/refine/fork) to create a copy under your GitHub account.
+2. **Clone your fork** to your local machine.
+3. **Add the upstream remote** so you can pull in the latest changes from the main repository.
+4. **Install dependencies** with `pnpm install`.
+5. **Build and run packages/examples** in watch mode with `pnpm dev --scope <package> --scope <example>`.
+6. **Run tests** for the package you're working on with `pnpm test --scope <package>`.
+7. **Lint and format** your changes with biome.
+8. **Create a changeset** describing your changes with `pnpm changeset`.
+9. **Commit your changes** using a conventional commit message.
+10. **Push your branch** to your fork and **open a pull request** against the `main` branch of `refinedev/refine`.
+
+Each step is explained in detail below.
 
 ### Cloning the Repository
 
 After you fork the Refine repository, you need to clone it to your local machine. Instead of using the `refinedev/refine` repository, it's recommended to use your fork. This way, you can push your changes to your fork and create a pull request from there.
 
 ```sh
-git clone https://github.com/refinedev/refine.git
+git clone https://github.com/<your-username>/refine.git
+```
+
+Then, navigate to the cloned directory and add the main repository as the `upstream` remote. This allows you to fetch the latest changes and rebase your work on top of them:
+
+```sh
+cd refine
+git remote add upstream https://github.com/refinedev/refine.git
+```
+
+To keep your fork up to date with the latest changes from the main repository:
+
+```sh
+git fetch upstream
+git checkout main
+git merge upstream/main
 ```
 
 ### Installing dependencies
@@ -221,7 +251,13 @@ Fixes #5678
 
 ### Creating a Pull Request
 
-After you commit your changes and create a changeset, you can push your changes to your fork and [create a pull request](https://github.com/refinedev/refine/compare). When you create a pull request, you will see a Github action that will run the tests and check if your changeset is valid. Our maintainers will review your changes in short time and merge your pull request if everything is good.
+After you commit your changes and create a changeset, you can push your changes to your fork and [create a pull request](https://github.com/refinedev/refine/compare).
+
+```sh
+git push origin your-branch-name
+```
+
+When you create a pull request, you will see a Github action that will run the tests and check if your changeset is valid. Our maintainers will review your changes in short time and merge your pull request if everything is good.
 
 Our Pull Request template is designed to make sure you provide all the necessary information about your changes. Please make sure you fill the template with the required information.
 
