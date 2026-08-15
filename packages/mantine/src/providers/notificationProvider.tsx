@@ -10,6 +10,14 @@ import { IconCheck, IconRotate2, IconX } from "@tabler/icons-react";
 
 import { RingCountdown } from "@components";
 
+const notificationTypeProps: Record<
+  "success" | "error",
+  { color: string; icon: React.ReactNode }
+> = {
+  success: { color: "primary", icon: <IconCheck size={18} /> },
+  error: { color: "red", icon: <IconX size={18} /> },
+};
+
 export const useNotificationProvider = (): NotificationProvider => {
   const activeNotifications: string[] = [];
 
@@ -126,13 +134,8 @@ export const useNotificationProvider = (): NotificationProvider => {
         if (isNotificationActive(key)) {
           updateNotification({
             id: key!,
-            color: type === "success" ? "primary" : "red",
-            icon:
-              type === "success" ? (
-                <IconCheck size={18} />
-              ) : (
-                <IconX size={18} />
-              ),
+            color: notificationTypeProps[type].color,
+            icon: notificationTypeProps[type].icon,
             message,
             title: description,
             autoClose: 5000,
@@ -141,13 +144,8 @@ export const useNotificationProvider = (): NotificationProvider => {
           addNotification(key);
           showNotification({
             id: key!,
-            color: type === "success" ? "primary" : "red",
-            icon:
-              type === "success" ? (
-                <IconCheck size={18} />
-              ) : (
-                <IconX size={18} />
-              ),
+            color: notificationTypeProps[type].color,
+            icon: notificationTypeProps[type].icon,
             message,
             title: description,
             onClose: () => {
