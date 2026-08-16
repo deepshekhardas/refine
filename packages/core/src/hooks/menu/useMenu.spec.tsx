@@ -1,6 +1,6 @@
 import React from "react";
 
-import { renderHook } from "@testing-library/react";
+import { act, fireEvent, renderHook, screen } from "@testing-library/react";
 
 import { TestWrapper, mockRouterProvider } from "@test";
 
@@ -328,6 +328,59 @@ describe("useMenu Hook", () => {
           name: "categories",
         }),
       ]),
+    );
+  });
+
+  it("should recompute defaultOpenKeys when the resource changes", async () => {
+    const wrapper = ({ children }: { children: React.ReactNode }) => {
+      const [hasResource, setHasResource] = React.useState(false);
+
+      return (
+        <div>
+          <button onClick={() => setHasResource(true)}>switch</button>
+          <TestWrapper
+            routerProvider={mockRouterProvider(
+              hasResource
+                ? {
+                    pathname: "/CMS/posts",
+                    resource: {
+                      name: "posts",
+                      meta: {
+                        parent: "CMS",
+                      },
+                    },
+                  }
+                : { pathname: "/" },
+            )}
+            resources={[
+              {
+                name: "CMS",
+              },
+              {
+                name: "posts",
+                list: "/posts",
+                meta: {
+                  parent: "CMS",
+                },
+              },
+            ]}
+          >
+            {children}
+          </TestWrapper>
+        </div>
+      );
+    };
+
+    const { result } = renderHook(() => useMenu(), { wrapper });
+
+    expect(result.current.defaultOpenKeys).toEqual([]);
+
+    await act(async () => {
+      fireEvent.click(screen.getByText("switch"));
+    });
+
+    expect(result.current.defaultOpenKeys).toEqual(
+      expect.arrayContaining(["/CMS", "/CMS/posts"]),
     );
   });
 
