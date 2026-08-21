@@ -34,17 +34,21 @@ export const useNotificationProvider = (): NotificationProvider => {
               undoableTimeout={undoableTimeout}
             />
           ),
-          message: null,
+          title: null,
           duration: 0,
           closeIcon: <></>,
         });
       } else {
-        notification.open({
+        const notificationParams = {
           key,
-          description: message,
-          message: description ?? null,
-          type,
-        });
+          title: message,
+          description: description ?? null,
+        };
+        if (type === "error") {
+          notification.error(notificationParams);
+        } else {
+          notification.success(notificationParams);
+        }
       }
     },
     close: (key) => notification.destroy(key),
