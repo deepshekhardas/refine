@@ -39,7 +39,12 @@ export const Breadcrumb: React.FC<BreadcrumbProps> = ({
     const { to, children, ...restProps } = props;
     return (
       <Link to={to || ""}>
-        <span {...restProps}>{children}</span>
+        <MuiLink
+          {...restProps}
+          sx={{ textDecoration: "none", ...restProps.sx }}
+        >
+          {children}
+        </MuiLink>
       </Link>
     );
   };
