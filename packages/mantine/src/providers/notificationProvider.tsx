@@ -126,13 +126,14 @@ export const useNotificationProvider = (): NotificationProvider => {
         if (isNotificationActive(key)) {
           updateNotification({
             id: key!,
-            color: type === "success" ? "primary" : "red",
+            color:
+              type === "error" ? "red" : type === "success" ? "green" : "blue",
             icon:
-              type === "success" ? (
-                <IconCheck size={18} />
-              ) : (
+              type === "error" ? (
                 <IconX size={18} />
-              ),
+              ) : type === "success" ? (
+                <IconCheck size={18} />
+              ) : null,
             message,
             title: description,
             autoClose: 5000,
@@ -141,13 +142,14 @@ export const useNotificationProvider = (): NotificationProvider => {
           addNotification(key);
           showNotification({
             id: key!,
-            color: type === "success" ? "primary" : "red",
+            color:
+              type === "error" ? "red" : type === "success" ? "green" : "blue",
             icon:
-              type === "success" ? (
-                <IconCheck size={18} />
-              ) : (
+              type === "error" ? (
                 <IconX size={18} />
-              ),
+              ) : type === "success" ? (
+                <IconCheck size={18} />
+              ) : null,
             message,
             title: description,
             onClose: () => {
