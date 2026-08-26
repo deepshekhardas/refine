@@ -82,7 +82,7 @@ You can also try Refine's AI agent for free to create projects:
 
 ## Quick Start
 
-Here's Refine CORE in action, the below code is an example of a simple CRUD application using Refine CORE + React Router + Material UI:
+Here's Refine CORE in action — the code below is an example of a simple CRUD application using Refine CORE with React Router and Material UI:
 
 ```tsx
 import React from "react";
