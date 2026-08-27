@@ -35,7 +35,7 @@ It eliminates repetitive tasks in CRUD operations and provides industry-standard
 
 # Supabase integration for refine
 
-[Supabase](https://supabase.com/) is an open source Firebase alternative.
+[Supabase](https://supabase.com/) is an open-source Firebase alternative.
 
 [refine](https://refine.dev/) is **headless by design**, offering unlimited styling and customization options. Moreover, refine ships with ready-made integrations for [Ant Design](https://ant.design/), [Material UI](https://mui.com/material-ui/getting-started/overview/), [Mantine](https://mantine.dev/), and [Chakra UI](https://chakra-ui.com/) for convenience.
 
