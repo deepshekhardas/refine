@@ -13,7 +13,7 @@ displayed_sidebar: mainSidebar
 
 Refine's core hooks and components streamline the development process by offering industry-standard solutions for crucial aspects of a project, including **authentication**, **access control**, **routing**, **networking**, **state management**, and **i18n**.
 
-Refine's headless architecture enables the building of highly customizable applications by decoupling business logic from UI and routing. This allows integration with:
+Refine's headless architecture enables building highly customizable applications by decoupling business logic from UI and routing. This allows integration with:
 
 - Any custom designs or UI frameworks like [TailwindCSS](https://tailwindcss.com/), along with built-in support for [Ant Design](https://ant.design/), [Material UI](https://mui.com/material-ui/getting-started/overview/), [Mantine](https://mantine.dev/), and [Chakra UI](https://chakra-ui.com/).
 
