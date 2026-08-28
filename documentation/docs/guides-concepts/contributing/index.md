@@ -7,8 +7,8 @@ description: "Integrate Contributing in Refine v5. Learn best practices. Learn b
 
 We follow a [code of conduct](https://github.com/refinedev/refine/blob/main/CODE_OF_CONDUCT) when participating in the community. Please read it before you make any contributions.
 
-- If you plan to work on an issue, mention so in the issue page before you start working on it.
-- If you plan to work on a new feature, create an issue and discuss it with other community members/maintainers.
+- If you plan to work on an issue, mention it on the issue page before you start working on it.
+- If you plan to work on a new feature, create an issue and discuss it with other community members and maintainers.
 - Ask for help in our [community room](https://discord.gg/refine).
 
 ## Ways to contribute
