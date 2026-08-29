@@ -2,7 +2,7 @@
 
 <div  >
   <a href="https://github.com/refinedev/refine">
-  <img  src="https://refine.ams3.cdn.digitaloceanspaces.com/blog/2023-05-10-what-is-refine-new/social.png" alt="Refine banner" />
+  <img src="https://refine.ams3.cdn.digitaloceanspaces.com/blog/2023-05-10-what-is-refine-new/social.png" alt="Refine banner" />
 </a>
 </div>
 
