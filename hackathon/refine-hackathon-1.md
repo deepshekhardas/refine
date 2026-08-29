@@ -104,7 +104,7 @@ Strapi, Appwrite, Medusa, and Meilisearch will also be providing swag kits for t
 
 ## Hackathon Key Facts
 
--   Enter as a solo or recruit a team of up to five and take part in this exciting hackaton!
+-   Enter as a solo or recruit a team of up to five and take part in this exciting hackathon!
 -   You have 4 weeks to build a cool Open Source project using **refine**.
 -   Build a **refine** project. It can be anything like CRUD app, admin panel, internal tool, forms, storefront, dashboard, library, data provider, auth provider, live provider, etc.
 
@@ -112,9 +112,9 @@ Strapi, Appwrite, Medusa, and Meilisearch will also be providing swag kits for t
 
 ### Schedule
 
--   The Hackathon begins at 9:00am PT Monday 23th January 2023
+-   The Hackathon begins at 9:00am PT Monday 23rd January 2023
 -   Work on your project any time for the next 4 weeks
--   Submission deadline (11:59pm PT Monday 23st February 2023)
+-   Submission deadline (11:59pm PT Monday 23rd February 2023)
 -   The winners will be announced on Monday 28th February 2023
 
 ### Prizes
