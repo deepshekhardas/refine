@@ -291,7 +291,7 @@ The total prize pool amount is **$10,000**. The distribution of prizes will be a
 - **Most Visually Pleasing**  
 - **Most Technically Impressive** 
 
-You can use any data provider or UI framework in the refine app for the three main  prize categories above.
+You can use any data provider or UI framework in the refine app for the three main prize categories above.
 
 #### Sponsor's Special prize categories
 - **Best Project built using [Supabase](https://supabase.com/)** 
