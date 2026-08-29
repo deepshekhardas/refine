@@ -27,5 +27,5 @@ refine has connectors for 15+ backend services, including REST API, [GraphQL](ht
 ## Install
 
 ```
-npm create refine-app@latest  my-app
+npm create refine-app@latest my-app
 ```
