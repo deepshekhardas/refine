@@ -36,4 +36,4 @@ npm run refine devtools init
 
 Ta-da! 🎉 Everything is ready now, you can use the refine devtools in your project! 🕶
 
-> Devtools only works in development mode and have no overhead on production builds. You don't need to do anything special to exclude DevTools from your bundle.
+> Devtools only works in development mode and has no overhead on production builds. You don't need to do anything special to exclude DevTools from your bundle.
