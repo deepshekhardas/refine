@@ -119,7 +119,7 @@ Try [Refine](https://github.com/pankod/refine) to rapidly build your next **CRUD
 
 <div>
 <a href="https://github.com/pankod/refine">
-  <img  src="https://refine.ams3.cdn.digitaloceanspaces.com/website/static/img/generic_banner.webp" alt="Refine blog banner" />
+  <img src="https://refine.ams3.cdn.digitaloceanspaces.com/website/static/img/generic_banner.webp" alt="Refine blog banner" />
 </a>
 </div>
 
@@ -210,7 +210,7 @@ Our project is ready! With React Hook Form, we can now send the selected file to
 <br/>
 <div>
 <a href="https://discord.gg/refine">
-  <img  src="https://refine.ams3.cdn.digitaloceanspaces.com/website/static/img/discord_big_blue.png" alt="Join Refine on Discord banner" />
+  <img src="https://refine.ams3.cdn.digitaloceanspaces.com/website/static/img/discord_big_blue.png" alt="Join Refine on Discord banner" />
 </a>
 </div>
 
