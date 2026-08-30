@@ -112,7 +112,7 @@ Although **Refine** is a headless framework that can be used with any UI framewo
 We'll see how to leverage these components with Refine's [`useDataGrid`](https://refine.dev/core/docs/api-reference/mui/hooks/useDataGrid/) hook in our Refine app in the coming sections.
 
 <a href="https://github.com/refinedev/refine">
-  <img  src="https://refine.ams3.cdn.digitaloceanspaces.com/website/static/img/github-support-banner.png" alt="Support Refine on GitHub banner" />
+  <img src="https://refine.ams3.cdn.digitaloceanspaces.com/website/static/img/github-support-banner.png" alt="Support Refine on GitHub banner" />
 </a>
 
 ## Adding styled-components
@@ -733,7 +733,7 @@ Where to go next? Check the useDataGrid hook [documentation](https://refine.dev/
 <br/>
 <div>
 <a href="https://discord.gg/refine">
-  <img  src="https://refine.ams3.cdn.digitaloceanspaces.com/website/static/img/discord_big_blue.png" alt="Join Refine on Discord banner" />
+  <img src="https://refine.ams3.cdn.digitaloceanspaces.com/website/static/img/discord_big_blue.png" alt="Join Refine on Discord banner" />
 </a>
 </div>
 
