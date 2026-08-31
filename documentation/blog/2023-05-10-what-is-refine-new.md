@@ -21,7 +21,7 @@ It is specifically tailored for data-intensive applications like admin panels, d
 
  <div className="centered-image"  >
   <a href="https://github.com/refinedev/refine">
-  <img style={{alignSelf:"center", width:"600px"}}  src="https://refine.ams3.cdn.digitaloceanspaces.com/website/static/img/diagram.png" alt="Refine architecture diagram" />
+  <img style={{alignSelf:"center", width:"600px"}} src="https://refine.ams3.cdn.digitaloceanspaces.com/website/static/img/diagram.png" alt="Refine architecture diagram" />
 </a>
 </div>
 
@@ -46,7 +46,7 @@ Refine has connectors for 15+ backend services, including REST API, [GraphQL](ht
 
  <div className="centered-image"  >
   <a href="https://refine.new/">
-  <img   src="https://refine.ams3.cdn.digitaloceanspaces.com/website/static/img/quick-start.gif" alt="refine.new quick start flow" />
+  <img src="https://refine.ams3.cdn.digitaloceanspaces.com/website/static/img/quick-start.gif" alt="refine.new quick start flow" />
 </a>
 </div>
 
