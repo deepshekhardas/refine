@@ -184,7 +184,7 @@ const runTests = async () => {
       start.stdout.on("data", console.log);
       start.stderr.on("data", console.error);
     } catch (error) {
-      prettyLog("red", "Error occured on starting the dev server");
+      prettyLog("red", "Error occurred on starting the dev server");
       failed = true;
     }
 
@@ -195,14 +195,14 @@ const runTests = async () => {
 
       const status = await waitForServer(port);
       if (!status) {
-        prettyLog("red", "Error occured on waiting for the server to start");
+        prettyLog("red", "Error occurred on waiting for the server to start");
         failed = true;
       } else {
         respondedUrl = status;
         prettyLog("green", `Server started at ${status}`);
       }
     } catch (error) {
-      prettyLog("red", "Error occured on waiting for the server to start");
+      prettyLog("red", "Error occurred on waiting for the server to start");
       if (error) console.log(JSON.stringify(error, null, 2));
 
       failed = true;
@@ -228,7 +228,7 @@ const runTests = async () => {
         prettyLog("green", `Tests for ${path} finished`);
       }
     } catch (error) {
-      prettyLog("red", `Error occured on tests for ${path}`);
+      prettyLog("red", `Error occurred on tests for ${path}`);
       if (error) console.log(JSON.stringify(error, null, 2));
 
       failed = true;
@@ -252,7 +252,7 @@ const runTests = async () => {
           failed = true;
         }
       } catch (error) {
-        prettyLog("red", "Error occured on killing the dev server");
+        prettyLog("red", "Error occurred on killing the dev server");
         if (error) console.log(JSON.stringify(error, null, 2));
         failed = true;
       }
