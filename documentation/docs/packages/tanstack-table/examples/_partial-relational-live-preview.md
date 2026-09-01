@@ -61,7 +61,7 @@ const PostList: React.FC = () => {
           const meta = table.options.meta as {
             categoryData: GetManyResponse<ICategory>;
           };
-          // Gets the  category from the meta.categoryData object, which is the result of the useMany hook We pass this data to meta with the setOptions function.
+          // Gets the category from the meta.categoryData object, which is the result of the useMany hook We pass this data to meta with the setOptions function.
           const category = meta.categoryData?.data?.find(
             (item) => item.id === getValue(),
           );
