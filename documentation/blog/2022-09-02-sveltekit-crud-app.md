@@ -138,7 +138,7 @@ In the above code snippet, we imported the **SMUI** components we need, and we d
 <br/>
 <div>
 <a href="https://github.com/refinedev/refine">
-	<img  src="https://refine.ams3.cdn.digitaloceanspaces.com/website/static/img/github-support-banner.png" alt="Support Refine on GitHub banner" />
+	<img src="https://refine.ams3.cdn.digitaloceanspaces.com/website/static/img/github-support-banner.png" alt="Support Refine on GitHub banner" />
 </a>
 </div>
 
@@ -404,7 +404,7 @@ Throughout this tutorial, we've implemented how to create a CRUD application usi
 <br/>
 <div>
 <a href="https://discord.gg/refine">
-	<img  src="https://refine.ams3.cdn.digitaloceanspaces.com/website/static/img/discord-banner.png" alt="Join Refine on Discord banner" />
+	<img src="https://refine.ams3.cdn.digitaloceanspaces.com/website/static/img/discord-banner.png" alt="Join Refine on Discord banner" />
 </a>
 </div>
 
@@ -422,7 +422,7 @@ Check out [Refine](https://github.com/refinedev/refine), if you are interested i
 
 <div>
 <a href="https://github.com/refinedev/refine">
-	<img  src="https://refine.ams3.cdn.digitaloceanspaces.com/website/static/img/refine_blog_logo_1.webp" alt="Refine blog banner logo" />
+	<img src="https://refine.ams3.cdn.digitaloceanspaces.com/website/static/img/refine_blog_logo_1.webp" alt="Refine blog banner logo" />
 </a>
 </div>
 
