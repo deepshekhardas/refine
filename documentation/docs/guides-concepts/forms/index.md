@@ -499,7 +499,7 @@ import UseSelectHeadless from "./use-select-headless";
 
 </TabItem>
 
-<TabItem  value="antd" label="Ant Design">
+<TabItem value="antd" label="Ant Design">
 
 import UseSelectAntd from "./use-select-antd";
 
