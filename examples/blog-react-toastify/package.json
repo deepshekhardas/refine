@@ -50,7 +50,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.4",
     "typescript": "^5.8.3",
-    "vite": "^5.4.15"
+    "vite": "^8.2.2"
   },
   "engines": {
     "node": ">=20"
